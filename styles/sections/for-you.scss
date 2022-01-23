@@ -50,7 +50,7 @@ section.for-you {
                         display: block;
                         width: 100%;
                         padding-top: 66.66%;
-                        background: no-repeat center / cover url('../../image/for-you/for-you-img.png');
+                        background: no-repeat center / cover url($image-dir + 'for-you/for-you-img.png');
                     }
                 }
             }
