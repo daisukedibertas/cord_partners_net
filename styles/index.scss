@@ -1,0 +1,17 @@
+@import './utils/fonts.scss';
+@import './utils/colors.scss';
+@import './sections/top.scss';
+@import './sections/about.scss';
+@import './sections/vision.scss';
+@import './sections/activity.scss';
+@import './sections/for-you.scss';
+
+body {
+    background-color: #F2F2F2;
+    font-family: 'Noto Sans JP','Open Sans', sans-serif;
+}
+
+p {
+    font-size: 17px;
+    font-weight: 400;
+}

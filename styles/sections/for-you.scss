@@ -1,0 +1,59 @@
+section.for-you {
+    .container {
+        .for-you_header {
+            .list {
+                display: flex;
+                justify-content: space-around;
+                margin-bottom: 36px;
+
+                .item {
+                    img {
+                        width: 230px;
+                        height: 230px;
+                    }
+                }
+            }
+            .text {
+                text-align: center;
+                color: $light-color;
+            }
+        }
+        .for-you_body {
+            .item {
+                display: flex;
+
+                .info {
+                    flex-basis: 50%;
+                    padding-right: 30px;
+
+                    .title img {
+                        width: 230px;
+                    }
+
+                    .sub-title {
+                        font-size: 26px;
+                        font-weight: $bold;
+                    }
+
+                    .actions .btn {
+                        font-size: 19px;
+                        color: #fff;
+                        background-color: $sub-color;
+                        padding: 10px 90px;
+                    }
+                }
+                .thumbnail {
+                    flex-basis: 50%;
+
+                    &::after {
+                        content: '';
+                        display: block;
+                        width: 100%;
+                        padding-top: 66.66%;
+                        background: no-repeat center / cover url('../../image/for-you/for-you-img.png');
+                    }
+                }
+            }
+        }
+    }
+}

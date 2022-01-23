@@ -1,0 +1,29 @@
+@import '../utils/colors.scss';
+
+.about {
+    $margin-bottom: 35px;
+    .wrapper {
+        text-align: center;
+    }
+    h2 {
+        font-size: 75px;
+        color: $main-color;
+        font-weight: $extra-bold;
+        letter-spacing: 0.045em;
+    }
+    .sub-title {
+        color: $main-color;
+        font-weight: $bold;
+        margin-bottom: $margin-bottom;
+    }
+    img {
+        max-width: 80%;
+        margin-bottom: $margin-bottom;
+    }
+    h3 {
+        color: $main-color;
+        font-weight: $bold;
+        font-size: 35px;
+        margin-bottom: $margin-bottom;
+    }
+}

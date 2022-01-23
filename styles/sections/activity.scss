@@ -1,0 +1,72 @@
+@import '../partials/main-title.scss';
+
+.activity {
+    .container {
+
+        @mixin activity_item($image, $reverse) {
+            display: flex;
+            align-items: center;
+
+            @if $reverse {
+                flex-direction: row-reverse;
+            }
+
+            .thumbnail-wrapper {
+                flex-basis: 50%;
+
+                .thumbnail {
+                    &::before {
+                        content: '';
+                        display: block;
+                        width: 100%;
+                        padding-top: 66.66%;
+                        background: center / cover no-repeat url($image);
+                    }
+                }
+            }
+
+            .info {
+                flex-basis: 50%;
+                padding: 50px;
+
+                .info_header {
+                    text-align: center;
+
+                    .title {
+                        font-size: 30px;
+                    }
+
+                    .sub-title {
+                        color: $main-color;
+                    }
+                }
+
+                .text {
+                    font-size: 14px;
+                    color: $light-color;
+                }
+
+                .actions {
+                    text-align: center;
+                }
+            }
+        }
+
+        $activity-margin: 50px;
+        .activity_item:nth-of-type(1) {
+            @include activity_item("../../image/activity/activity01.png", false);
+            margin-bottom: $activity-margin;
+        }
+        .activity_item:nth-of-type(2) {
+            @include activity_item("../../image/activity/activity02.png", true);
+            margin-bottom: $activity-margin;
+        }
+        .activity_item:nth-of-type(3) {
+            @include activity_item("../../image/activity/activity03.png", false);
+            margin-bottom: $activity-margin;
+        }
+        .activity_item:nth-of-type(4) {
+            @include activity_item("../../image/activity/activity04.png", true);
+        }
+    }
+}

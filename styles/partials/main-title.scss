@@ -1,0 +1,40 @@
+@import '../utils/position-center.scss';
+
+.main-title {
+    $margin: 100px;
+    margin: $margin 0 $margin 0;
+    // main-title should nested in div
+    $height: 120px;
+    width: 100%;
+    height: $height;
+    position: relative;
+    z-index: 1;
+    h2 {
+        @include position-center();
+        color: #fff;
+        font-size: 45px;
+        font-weight: $bold;
+        letter-spacing: 0.045em;
+        z-index: 2;
+    }
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        height: $height;
+        width: 100%;
+        transform: skewY(3deg);
+        background-color: $main-color;
+    }
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        height: $height * 0.3;
+        background-color: $sub-color;
+        transform: translateY(-50%);
+        transform: skewY(-5deg);
+    }
+}
