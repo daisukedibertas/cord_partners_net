@@ -1,0 +1,31 @@
+.message {
+    .sub-title {
+        font-size: 60px;
+        color: $main-color;
+        text-align: center;
+    }
+
+    .message-wrapper {
+        display: flex;
+
+        .profile {
+            flex-basis: 50%;
+
+            .text-wrapper {
+                margin-right: 100px;
+
+                .career {
+                    color: $main-color;
+                }
+            }
+        }
+
+        .body {
+            flex-basis: 50%;
+
+            ul {
+                color: $main-color;
+            }
+        }
+    }
+}
