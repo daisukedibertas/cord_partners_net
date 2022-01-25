@@ -1,0 +1,20 @@
+.supporters {
+    text-align: center;
+    
+    .title {
+        color: $main-color;
+    }
+
+    .list {
+        display: flex;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        .item {
+            margin-right: 50px;
+        }
+        .item:last-of-type {
+            margin-right: 0;
+        }
+    }
+}

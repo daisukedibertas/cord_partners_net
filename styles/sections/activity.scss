@@ -11,8 +11,16 @@
                 flex-direction: row-reverse;
             }
 
+            @include mq(sm) {
+                flex-direction: column;
+            }
+
             .thumbnail-wrapper {
                 flex-basis: 50%;
+                
+                @include mq(sm) {
+                    width: 100%;
+                }
 
                 .thumbnail {
                     &::before {

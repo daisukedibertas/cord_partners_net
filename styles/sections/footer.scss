@@ -1,0 +1,18 @@
+footer.footer {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 30px 60px 20px;
+    background: #E8E8E8;
+
+    .left {
+        address {
+            color: $light-color;
+        }
+    }
+
+    .text-mini {
+        color: $light-color;
+        font-size: 11px;
+    }
+}

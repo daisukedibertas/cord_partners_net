@@ -8,11 +8,25 @@
     .message-wrapper {
         display: flex;
 
+        @include mq(sm) {
+            flex-direction: column;
+        }
+
         .profile {
             flex-basis: 50%;
 
+            .profile-img {
+                img {
+                    max-width: 100%;
+                }
+            }
+
             .text-wrapper {
                 margin-right: 100px;
+
+                @include mq(sm) {
+                    margin-right: 0;
+                }
 
                 .career {
                     color: $main-color;
@@ -41,6 +55,16 @@
         .staff-list {
             display: grid;
             grid-template-columns: repeat(4, 25%);
+
+            @include mq(sm) {
+                grid-template-columns: 50% 50%;
+            }
+
+            .staff-item {
+                img {
+                    max-width: 100%;
+                }
+            }
         }
     }
 }
