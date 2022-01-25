@@ -289,6 +289,26 @@ section.for-you .container .for-you_body .item:nth-of-type(2) {
     flex-basis: 50%; }
     .message .message-wrapper .body ul {
       color: #E60012; }
+.message h3 {
+  text-align: center;
+  color: #E60012;
+  font-size: 50px;
+  font-weight: 800; }
+.message .staff-wrapper .staff-list {
+  display: grid;
+  grid-template-columns: repeat(4, 25%); }
+
+section.diary .container {
+  max-width: 900px;
+  position: relative; }
+  section.diary .container::after {
+    content: '';
+    display: block;
+    width: 100%;
+    padding-top: 82.38%;
+    background: center/cover no-repeat url("../image/diary/map.png"); }
+  section.diary .container dl {
+    position: absolute; }
 
 body {
   background-color: #F2F2F2;
