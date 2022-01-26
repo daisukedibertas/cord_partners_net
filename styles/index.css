@@ -347,7 +347,7 @@ section.for-you .container .for-you_body .item:nth-of-type(2) {
   grid-template-columns: repeat(4, 25%); }
   @media screen and (max-width: 767px) {
     .message .staff-wrapper .staff-list {
-      grid-template-columns: 50% 50%; } }
+      grid-template-columns: 100%; } }
   .message .staff-wrapper .staff-list .staff-item img {
     max-width: 100%; }
 
@@ -362,6 +362,41 @@ section.diary .container {
     background: center/cover no-repeat url("../image/diary/map.png"); }
   section.diary .container dl {
     position: absolute; }
+
+.supporters {
+  text-align: center; }
+  .supporters .title {
+    color: #E60012; }
+  .supporters .list {
+    display: flex;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto; }
+    @media screen and (max-width: 767px) {
+      .supporters .list {
+        flex-direction: column; } }
+    .supporters .list .item {
+      margin-right: 50px; }
+    .supporters .list .item:last-of-type {
+      margin-right: 0; }
+
+footer.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 60px 20px;
+  background: #E8E8E8; }
+  @media screen and (max-width: 767px) {
+    footer.footer {
+      padding: 20px 30px 10px;
+      flex-direction: column; } }
+  @media screen and (max-width: 767px) {
+    footer.footer .left .d-flex {
+      flex-direction: column; } }
+  footer.footer .left address {
+    color: #707070; }
+  footer.footer .text-mini {
+    color: #707070;
+    font-size: 11px; }
 
 html {
   font-size: 17px; }

@@ -5,7 +5,17 @@ footer.footer {
     padding: 30px 60px 20px;
     background: #E8E8E8;
 
+    @include mq(sm) {
+        padding: 20px 30px 10px;
+        flex-direction: column;
+    }
+
     .left {
+        .d-flex {
+            @include mq(sm) {
+                flex-direction: column;
+            }
+        }
         address {
             color: $light-color;
         }
