@@ -15,9 +15,16 @@
         }
         .item {
             margin-right: 50px;
+            @include mq(sm) {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
         }
         .item:last-of-type {
             margin-right: 0;
+            @include mq(sm) {
+                margin-bottom: 0;
+            }
         }
     }
 }

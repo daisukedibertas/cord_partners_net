@@ -24,7 +24,7 @@
 
 <body>
     <!-- top section -->
-    <section class="top">
+    <section class="top mb-0">
         <div class="wrapper">
             <a href="/">
                 <img class="logo" src="image/top/logo@2x.png" alt="Cord Project ASSOCIATION">
@@ -35,7 +35,8 @@
         </div>
     </section>
 
-    <!-- header section -->
+    <!-- header start -->
+    <!-- header PC -->
     <header class="header">
         <div class="container">
             <h2 class="title">Menu</h2>
@@ -49,6 +50,27 @@
             </ul>
         </div>
     </header>
+    <!-- header SP -->
+    <header class="navbar navbar-expand-lg navbar-light bg-light d-md-none sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand main-color" href="/">Menu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link main-color" href="#about">私たちについて</a>
+                    <a class="nav-link" href="#activity">活動内容</a>
+                    <a class="nav-link" href="#for-you">あなたにできること</a>
+                    <a class="nav-link" href="#message">代表メッセージ</a>
+                    <a class="nav-link" href="#diary">活動報告</a>
+                    <a class="nav-link" href="/contact.html">問い合わせ</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
 
     <!-- about section -->
     <section id="about" class="about">
@@ -220,10 +242,10 @@
             <div class="for-you_header">
                 <!-- flex -->
                 <div class="list">
-                    <div class="item">
+                    <div class="item mb-3 mb-md-0">
                         <img src="./image/for-you/for-you-item01.png" alt="DONATE">
                     </div>
-                    <div class="item">
+                    <div class="item mb-3 mb-md-0">
                         <img src="./image/for-you/for-you-item02.png" alt="VOLUNTEER">
                     </div>
                     <div class="item">
@@ -317,7 +339,7 @@
                 <div class="text-wrapper">
                     <div class="career">
                         <p class="title">Profile</p>
-                        <ul>
+                        <ul class="list-unstyled">
                             <li>1982年8月8日 福岡県宗像市生まれ。</li>
                             <li>九州共立大学八幡西高等学校卒</li>
                             <li>日本大学文理学部教育学科卒</li>
@@ -372,70 +394,18 @@
             </div>
         </div>
 
-        <h3>STAFF</h3>
+        <h3 class="mb-4">STAFF</h3>
         <div class="staff-wrapper container">
             <ul class="staff-list list-unstyled">
                 <!-- grid -->
-                <li class="staff-item">
-                    <div class="header">
+                <li class="staff-item mb-3">
+                    <div class="header mb-3">
                         <img src="image/message/sample_staff.png" alt="sample staff">
                         <p>sample staff</p>
                     </div>
                     <div class="body">
                         <p class="position">理事</p>
-                        <p class="name">山田太郎</p>
-                        <p class="text">
-                            社会人をスタートし2011年に株式会社MINT TOKYOを設立。地方創生や様々な企画やデザインで多くの地域...
-                        </p>
-                    </div>
-                </li>
-                <li class="staff-item">
-                    <div class="header">
-                        <img src="image/message/sample_staff.png" alt="sample staff">
-                        <p>sample staff</p>
-                    </div>
-                    <div class="body">
-                        <p class="position">理事</p>
-                        <p class="name">山田太郎</p>
-                        <p class="text">
-                            社会人をスタートし2011年に株式会社MINT TOKYOを設立。地方創生や様々な企画やデザインで多くの地域...
-                        </p>
-                    </div>
-                </li>
-                <li class="staff-item">
-                    <div class="header">
-                        <img src="image/message/sample_staff.png" alt="sample staff">
-                        <p>sample staff</p>
-                    </div>
-                    <div class="body">
-                        <p class="position">理事</p>
-                        <p class="name">山田太郎</p>
-                        <p class="text">
-                            社会人をスタートし2011年に株式会社MINT TOKYOを設立。地方創生や様々な企画やデザインで多くの地域...
-                        </p>
-                    </div>
-                </li>
-                <li class="staff-item">
-                    <div class="header">
-                        <img src="image/message/sample_staff.png" alt="sample staff">
-                        <p>sample staff</p>
-                    </div>
-                    <div class="body">
-                        <p class="position">理事</p>
-                        <p class="name">山田太郎</p>
-                        <p class="text">
-                            社会人をスタートし2011年に株式会社MINT TOKYOを設立。地方創生や様々な企画やデザインで多くの地域...
-                        </p>
-                    </div>
-                </li>
-                <li class="staff-item">
-                    <div class="header">
-                        <img src="image/message/sample_staff.png" alt="sample staff">
-                        <p>sample staff</p>
-                    </div>
-                    <div class="body">
-                        <p class="position">理事</p>
-                        <p class="name">山田太郎</p>
+                        <p class="name mb-2">山田太郎</p>
                         <p class="text">
                             社会人をスタートし2011年に株式会社MINT TOKYOを設立。地方創生や様々な企画やデザインで多くの地域...
                         </p>
@@ -450,15 +420,30 @@
         <div class="main-title">
             <h2>活動報告</h2>
         </div>
+        <p class="text d-block d-md-none container">
+            日本中の子供たちにスポーツを届けるために力をお貸しください。<br>
+            CORD PROJECTは日本中の子供に対し、<br>
+            分け隔てなくスポーツ機械を提供し、<br>
+            子供たちの成長の支えになることが目標です。
+        </p>
         <div class="container">
-            <dl>
-                <dt>会員数</dt>
-                <dd>1000</dd>
-                <dt>活動を実施した都道府県</dt>
-                <dd>10/47</dd>
-                <dt>施設数</dt>
-                <dd>30</dd>
-            </dl>
+            <img src="image/diary/map.png" alt="活動を実施した都道府県">
+            <div class="contents">
+                <p class="text d-none d-md-block">
+                    日本中の子供たちにスポーツを届けるために力をお貸しください。<br>
+                    CORD PROJECTは日本中の子供に対し、<br>
+                    分け隔てなくスポーツ機械を提供し、<br>
+                    子供たちの成長の支えになることが目標です。
+                </p>
+                <dl>
+                    <dt>会員数</dt>
+                    <dd>1000</dd>
+                    <dt>活動を実施した都道府県</dt>
+                    <dd>10/47</dd>
+                    <dt>施設数</dt>
+                    <dd>30</dd>
+                </dl>
+            </div>
         </div>
     </section>
 
@@ -486,7 +471,7 @@
         <!-- flex -->
         <div class="left">
             <div class="d-flex">
-                <div class="logo">
+                <div class="logo me-md-3">
                     <a href="#">
                         <img src="image/cord_project_logo.png" alt="一般社団法人 CORD PROJECT ASSOCIATION">
                     </a>
@@ -499,12 +484,17 @@
             <a class="text-mini" href="#">プライバシーポリシー</a>
         </div>
         <div class="right">
-            <div class="d-flex">
+            <div class="d-block d-md-flex mb-auto">
                 <div>
-                    buttons
+                    <ul class="list-unstyled d-flex">
+                        <li><a href="#"><img src="image/icons/facebook.png" alt="facebook"></a></li>
+                        <li class="ms-1"><a href="#"><img src="image/icons/twitter.png" alt="twitter"></a></li>
+                        <li class="ms-1"><a href="#"><img src="image/icons/instagram.png" alt="instagram"></a></li>
+                        <li class="ms-1"><a href="#"><img src="image/icons/youtube.png" alt="youtube"></a></li>
+                    </ul>
                 </div>
                 <div>
-                    <button>button</button>
+                    <button class="btn">その他のお問い合わせ</button>
                 </div>
             </div>
             <span class="text-mini">Copyright (C) 2021 一般社団法人CORD PROJECT all rights reserved.</span>

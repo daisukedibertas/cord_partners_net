@@ -21,6 +21,14 @@ footer.footer {
         }
     }
 
+    .right {
+        button {
+            color: $light-color;
+            background-color: #fff;
+            border-radius: 1000px;
+        }
+    }
+
     .text-mini {
         color: $light-color;
         font-size: 11px;

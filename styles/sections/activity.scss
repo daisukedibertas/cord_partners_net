@@ -56,6 +56,10 @@
 
                 .actions {
                     text-align: center;
+                    .btn {
+                        color: #fff;
+                        background-color: $main-color;
+                    }
                 }
             }
         }

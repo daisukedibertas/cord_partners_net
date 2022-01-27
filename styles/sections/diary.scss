@@ -3,16 +3,14 @@ section.diary {
         max-width: 900px;
         position: relative;
 
-        &::after {
-            content: '';
-            display: block;
-            width: 100%;
-            padding-top: 82.38%;
-            background: center / cover no-repeat url($image-dir + 'diary/map.png');
+        img {
+            max-width: 100%;
         }
 
-        dl {
+        .contents {
             position: absolute;
+            top: 10px;
+            left: 10px;
         }
     }
 }

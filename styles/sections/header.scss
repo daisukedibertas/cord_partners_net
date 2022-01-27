@@ -1,4 +1,6 @@
+// header PC
 header.header {
+    margin-top: 40px;
     .container {
         max-width: 900px;
         transform: rotate(-3deg);
@@ -30,5 +32,11 @@ header.header {
 
     @include mq(sm) {
         display: none;
+    }
+}
+// header SP
+header.navbar {
+    a.main-color {
+        color: $main-color;
     }
 }
