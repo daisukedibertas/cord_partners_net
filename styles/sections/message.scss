@@ -1,9 +1,10 @@
 .message {
     background-color: #fff;
     .sub-title {
-        font-size: 60px;
+        font-size: 3.5294rem;
         color: $main-color;
         text-align: center;
+        margin-bottom: 80px;
     }
 
     .message-wrapper {
@@ -14,7 +15,12 @@
         }
 
         .profile {
+            font-size: 14px;
             flex-basis: 50%;
+
+            @include mq(md) {
+                transform: translateY(-45px);
+            }
 
             .profile-img {
                 img {
@@ -31,12 +37,18 @@
 
                 .career {
                     color: $main-color;
+                    font-weight: $bold;
+
+                    .title {
+                        font-size: 1.1764rem;
+                    }
                 }
             }
         }
 
         .body {
             flex-basis: 50%;
+            line-height: 1.5em;
 
             ul {
                 color: $main-color;
@@ -66,10 +78,29 @@
                     img {
                         max-width: 100%;
                     }
-                    p {
+                    .name {
                         position: absolute;
                         left: 10px;
                         bottom: 10px;
+
+                        color: $main-color;
+                        font-size: 1.2941rem;
+                        font-weight: $extra-bold;
+                    }
+                }
+
+                .body {
+                    .position {
+                        color: $main-color;
+                        line-height: 1;
+                        font-size: 1.0588rem;
+                    }
+                    .name {
+                        font-size: 1.4706rem;
+                        line-height: 1;
+                    }
+                    .text {
+                        font-size: 0.8235rem;
                     }
                 }
             }

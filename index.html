@@ -338,7 +338,7 @@
                 </div>
                 <div class="text-wrapper">
                     <div class="career">
-                        <p class="title">Profile</p>
+                        <p class="title mb-1">Profile</p>
                         <ul class="list-unstyled">
                             <li>1982年8月8日 福岡県宗像市生まれ。</li>
                             <li>九州共立大学八幡西高等学校卒</li>
@@ -401,11 +401,11 @@
                 <li class="staff-item mb-3">
                     <div class="header mb-3">
                         <img src="image/message/sample_staff.png" alt="sample staff">
-                        <p>sample staff</p>
+                        <p class="name">NAME<br>NAME NAME</p>
                     </div>
                     <div class="body">
-                        <p class="position">理事</p>
-                        <p class="name mb-2">山田太郎</p>
+                        <p class="position mb-1">理事</p>
+                        <p class="name mb-3">山田太郎</p>
                         <p class="text">
                             社会人をスタートし2011年に株式会社MINT TOKYOを設立。地方創生や様々な企画やデザインで多くの地域...
                         </p>
@@ -429,19 +429,27 @@
         <div class="container">
             <img src="image/diary/map.png" alt="活動を実施した都道府県">
             <div class="contents">
-                <p class="text d-none d-md-block">
+                <p class="text d-none d-md-block mb-md-4">
                     日本中の子供たちにスポーツを届けるために力をお貸しください。<br>
                     CORD PROJECTは日本中の子供に対し、<br>
                     分け隔てなくスポーツ機械を提供し、<br>
                     子供たちの成長の支えになることが目標です。
                 </p>
                 <dl>
-                    <dt>会員数</dt>
-                    <dd>1000</dd>
-                    <dt>活動を実施した都道府県</dt>
-                    <dd>10/47</dd>
-                    <dt>施設数</dt>
-                    <dd>30</dd>
+                    <div class="control">
+                        <dt>会員数</dt>
+                        <dd>1000</dd>
+                    </div>
+
+                    <div class="control">
+                        <dt>活動を実施した<br>都道府県</dt>
+                        <dd>10/47</dd>
+                    </div>
+
+                    <div class="control">
+                        <dt>施設数</dt>
+                        <dd>30</dd>
+                    </div>
                 </dl>
             </div>
         </div>
@@ -450,7 +458,7 @@
     <div class="supporters">
         <p class="title">SUPPORTERS</p>
         <!-- flex -->
-        <ul class="list list-unstyled">
+        <ul class="list list-unstyled mb-md-4">
             <li class="item">
                 <a href="#"><img src="image/supporters/ashimoto.png" alt="足元工業株式会社"></a>
             </li>
@@ -468,36 +476,41 @@
     </div>
 
     <footer class="footer">
-        <!-- flex -->
-        <div class="left">
-            <div class="d-flex">
-                <div class="logo me-md-3">
-                    <a href="#">
-                        <img src="image/cord_project_logo.png" alt="一般社団法人 CORD PROJECT ASSOCIATION">
-                    </a>
+        <div class="header">
+            <!-- flex -->
+            <div class="left">
+                <div class="d-flex mb-md-3">
+                    <div class="logo me-md-3">
+                        <a href="#">
+                            <img src="image/cord_project_logo.png" alt="一般社団法人 CORD PROJECT ASSOCIATION">
+                        </a>
+                    </div>
+                    <address>
+                        〒150-0032<br>
+                        東京都渋谷区鶯谷町2-3COMSビル 1F
+                    </address>
                 </div>
-                <address>
-                    〒150-0032<br>
-                    東京都渋谷区鶯谷町2-3COMSビル 1F
-                </address>
             </div>
-            <a class="text-mini" href="#">プライバシーポリシー</a>
-        </div>
-        <div class="right">
-            <div class="d-block d-md-flex mb-auto">
-                <div>
-                    <ul class="list-unstyled d-flex">
+            <div class="right">
+                <div class="right-header d-block d-md-flex">
+                    <ul class="list-unstyled d-flex me-md-3 mb-0">
                         <li><a href="#"><img src="image/icons/facebook.png" alt="facebook"></a></li>
                         <li class="ms-1"><a href="#"><img src="image/icons/twitter.png" alt="twitter"></a></li>
                         <li class="ms-1"><a href="#"><img src="image/icons/instagram.png" alt="instagram"></a></li>
                         <li class="ms-1"><a href="#"><img src="image/icons/youtube.png" alt="youtube"></a></li>
                     </ul>
-                </div>
-                <div>
-                    <button class="btn">その他のお問い合わせ</button>
+                    <div>
+                        <button class="btn">その他のお問い合わせ</button>
+                    </div>
                 </div>
             </div>
-            <span class="text-mini">Copyright (C) 2021 一般社団法人CORD PROJECT all rights reserved.</span>
+        </div>
+
+        <div class="footer">
+            <div class="left"><a class="text-mini" href="#">プライバシーポリシー</a></div>
+            <div class="right">
+                <span class="text-mini">Copyright (C) 2021 一般社団法人CORD PROJECT all rights reserved.</span>
+            </div>
         </div>
     </footer>
 

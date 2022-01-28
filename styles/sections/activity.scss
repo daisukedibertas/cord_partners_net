@@ -39,18 +39,26 @@
 
                 .info_header {
                     text-align: center;
-
+                    
+                    // Japanese
                     .title {
-                        font-size: 30px;
+                        font-size: 1.7647rem;
+                        font-weight: $bold;
+                        margin-bottom: .5em;
                     }
 
+                    // English
                     .sub-title {
                         color: $main-color;
+                        font-size: 1.470rem;
+                        font-weight: $extra-bold;
+                        margin-bottom: 0;
                     }
                 }
 
                 .text {
-                    font-size: 14px;
+                    font-size: 0.8235rem;
+                    line-height: 2em;
                     color: $light-color;
                 }
 
