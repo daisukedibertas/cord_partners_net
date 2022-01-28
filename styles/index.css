@@ -69,19 +69,36 @@ header.navbar a.main-color {
   font-weight: 800;
   letter-spacing: 0.045em;
   margin-bottom: 0; }
+  @media screen and (max-width: 767px) {
+    .about h2 {
+      font-size: 3rem; } }
 .about .sub-title {
   font-size: 1.117rem;
   color: #E60012;
   font-weight: 700;
-  margin-bottom: 35px; }
+  margin-bottom: 20px; }
+  @media screen and (max-width: 767px) {
+    .about .sub-title {
+      font-size: 1.1rem; } }
 .about img {
   max-width: 80%;
-  margin-bottom: 35px; }
+  margin-bottom: 20px; }
 .about h3 {
   color: #E60012;
   font-weight: 700;
   font-size: 2.058rem;
-  margin-bottom: 35px; }
+  margin-bottom: 20px; }
+  @media screen and (max-width: 767px) {
+    .about h3 {
+      font-size: 1.5rem; } }
+  .about h3 br {
+    display: none; }
+    @media screen and (max-width: 767px) {
+      .about h3 br {
+        display: block; } }
+@media screen and (max-width: 767px) {
+  .about p br {
+    display: none; } }
 
 .vision {
   text-align: center; }
@@ -91,11 +108,21 @@ header.navbar a.main-color {
   .vision .title {
     font-size: 3.529rem;
     letter-spacing: 0.045em; }
+    @media screen and (max-width: 767px) {
+      .vision .title {
+        font-size: 3rem;
+        margin-bottom: 0; } }
   .vision .sub-title {
     font-size: 1.764rem; }
+    @media screen and (max-width: 767px) {
+      .vision .sub-title {
+        font-size: 1.1rem; } }
   .vision .text {
     color: #707070;
     margin-bottom: 40px; }
+    @media screen and (max-width: 767px) {
+      .vision .text br {
+        display: none; } }
   .vision .card-wrapper {
     display: flex;
     justify-content: center; }
@@ -126,7 +153,7 @@ header.navbar a.main-color {
       color: #707070; }
 
 .main-title {
-  margin: 65px 0 65px 0;
+  margin: 40px 0 40px 0;
   width: 100%;
   height: 120px;
   position: relative;
@@ -141,6 +168,13 @@ header.navbar a.main-color {
     font-weight: 700;
     letter-spacing: 0.045em;
     z-index: 2; }
+    @media screen and (max-width: 767px) {
+      .main-title h2 {
+        font-size: 2.1rem;
+        text-align: center; } }
+    @media screen and (min-width: 768px) {
+      .main-title h2 br {
+        display: none; } }
   .main-title::after {
     content: '';
     display: block;
@@ -163,7 +197,7 @@ header.navbar a.main-color {
 .activity .container .activity_item:nth-of-type(1) {
   display: flex;
   align-items: center;
-  margin-bottom: 50px; }
+  margin-bottom: 20px; }
   @media screen and (max-width: 767px) {
     .activity .container .activity_item:nth-of-type(1) {
       flex-direction: column; } }
@@ -181,17 +215,26 @@ header.navbar a.main-color {
   .activity .container .activity_item:nth-of-type(1) .info {
     flex-basis: 50%;
     padding: 50px; }
+    @media screen and (max-width: 767px) {
+      .activity .container .activity_item:nth-of-type(1) .info {
+        padding: 10px; } }
     .activity .container .activity_item:nth-of-type(1) .info .info_header {
       text-align: center; }
       .activity .container .activity_item:nth-of-type(1) .info .info_header .title {
         font-size: 1.7647rem;
         font-weight: 700;
         margin-bottom: .5em; }
+        @media screen and (max-width: 767px) {
+          .activity .container .activity_item:nth-of-type(1) .info .info_header .title {
+            font-size: 1.5rem; } }
       .activity .container .activity_item:nth-of-type(1) .info .info_header .sub-title {
         color: #E60012;
         font-size: 1.470rem;
         font-weight: 800;
         margin-bottom: 0; }
+        @media screen and (max-width: 767px) {
+          .activity .container .activity_item:nth-of-type(1) .info .info_header .sub-title {
+            font-size: 1.1rem; } }
     .activity .container .activity_item:nth-of-type(1) .info .text {
       font-size: 0.8235rem;
       line-height: 2em;
@@ -205,7 +248,7 @@ header.navbar a.main-color {
   display: flex;
   align-items: center;
   flex-direction: row-reverse;
-  margin-bottom: 50px; }
+  margin-bottom: 20px; }
   @media screen and (max-width: 767px) {
     .activity .container .activity_item:nth-of-type(2) {
       flex-direction: column; } }
@@ -223,17 +266,26 @@ header.navbar a.main-color {
   .activity .container .activity_item:nth-of-type(2) .info {
     flex-basis: 50%;
     padding: 50px; }
+    @media screen and (max-width: 767px) {
+      .activity .container .activity_item:nth-of-type(2) .info {
+        padding: 10px; } }
     .activity .container .activity_item:nth-of-type(2) .info .info_header {
       text-align: center; }
       .activity .container .activity_item:nth-of-type(2) .info .info_header .title {
         font-size: 1.7647rem;
         font-weight: 700;
         margin-bottom: .5em; }
+        @media screen and (max-width: 767px) {
+          .activity .container .activity_item:nth-of-type(2) .info .info_header .title {
+            font-size: 1.5rem; } }
       .activity .container .activity_item:nth-of-type(2) .info .info_header .sub-title {
         color: #E60012;
         font-size: 1.470rem;
         font-weight: 800;
         margin-bottom: 0; }
+        @media screen and (max-width: 767px) {
+          .activity .container .activity_item:nth-of-type(2) .info .info_header .sub-title {
+            font-size: 1.1rem; } }
     .activity .container .activity_item:nth-of-type(2) .info .text {
       font-size: 0.8235rem;
       line-height: 2em;
@@ -246,7 +298,7 @@ header.navbar a.main-color {
 .activity .container .activity_item:nth-of-type(3) {
   display: flex;
   align-items: center;
-  margin-bottom: 50px; }
+  margin-bottom: 20px; }
   @media screen and (max-width: 767px) {
     .activity .container .activity_item:nth-of-type(3) {
       flex-direction: column; } }
@@ -264,17 +316,26 @@ header.navbar a.main-color {
   .activity .container .activity_item:nth-of-type(3) .info {
     flex-basis: 50%;
     padding: 50px; }
+    @media screen and (max-width: 767px) {
+      .activity .container .activity_item:nth-of-type(3) .info {
+        padding: 10px; } }
     .activity .container .activity_item:nth-of-type(3) .info .info_header {
       text-align: center; }
       .activity .container .activity_item:nth-of-type(3) .info .info_header .title {
         font-size: 1.7647rem;
         font-weight: 700;
         margin-bottom: .5em; }
+        @media screen and (max-width: 767px) {
+          .activity .container .activity_item:nth-of-type(3) .info .info_header .title {
+            font-size: 1.5rem; } }
       .activity .container .activity_item:nth-of-type(3) .info .info_header .sub-title {
         color: #E60012;
         font-size: 1.470rem;
         font-weight: 800;
         margin-bottom: 0; }
+        @media screen and (max-width: 767px) {
+          .activity .container .activity_item:nth-of-type(3) .info .info_header .sub-title {
+            font-size: 1.1rem; } }
     .activity .container .activity_item:nth-of-type(3) .info .text {
       font-size: 0.8235rem;
       line-height: 2em;
@@ -305,17 +366,26 @@ header.navbar a.main-color {
   .activity .container .activity_item:nth-of-type(4) .info {
     flex-basis: 50%;
     padding: 50px; }
+    @media screen and (max-width: 767px) {
+      .activity .container .activity_item:nth-of-type(4) .info {
+        padding: 10px; } }
     .activity .container .activity_item:nth-of-type(4) .info .info_header {
       text-align: center; }
       .activity .container .activity_item:nth-of-type(4) .info .info_header .title {
         font-size: 1.7647rem;
         font-weight: 700;
         margin-bottom: .5em; }
+        @media screen and (max-width: 767px) {
+          .activity .container .activity_item:nth-of-type(4) .info .info_header .title {
+            font-size: 1.5rem; } }
       .activity .container .activity_item:nth-of-type(4) .info .info_header .sub-title {
         color: #E60012;
         font-size: 1.470rem;
         font-weight: 800;
         margin-bottom: 0; }
+        @media screen and (max-width: 767px) {
+          .activity .container .activity_item:nth-of-type(4) .info .info_header .sub-title {
+            font-size: 1.1rem; } }
     .activity .container .activity_item:nth-of-type(4) .info .text {
       font-size: 0.8235rem;
       line-height: 2em;
@@ -328,6 +398,9 @@ header.navbar a.main-color {
 
 section.for-you .container .for-you_header {
   margin-bottom: 70px; }
+  @media screen and (max-width: 767px) {
+    section.for-you .container .for-you_header {
+      margin-bottom: 50px; } }
   section.for-you .container .for-you_header .list {
     display: flex;
     justify-content: space-around;
@@ -355,12 +428,16 @@ section.for-you .container .for-you_body .item {
     padding-right: 30px; }
     @media screen and (max-width: 767px) {
       section.for-you .container .for-you_body .item .info {
-        width: 100%; } }
+        width: 100%;
+        margin-bottom: 10px; } }
     section.for-you .container .for-you_body .item .info .title img {
       width: 230px; }
     section.for-you .container .for-you_body .item .info .sub-title {
-      font-size: 26px;
+      font-size: 1.5294rem;
       font-weight: 700; }
+      @media screen and (max-width: 767px) {
+        section.for-you .container .for-you_body .item .info .sub-title {
+          font-size: 1.3rem; } }
     section.for-you .container .for-you_body .item .info .actions .btn {
       font-size: 19px;
       color: #fff;
@@ -378,9 +455,9 @@ section.for-you .container .for-you_body .item {
       padding-top: 66.66%;
       background: no-repeat center/cover url("../image/for-you/for-you-img.png"); }
 section.for-you .container .for-you_body .item:nth-of-type(1) {
-  margin-bottom: 100px; }
+  margin-bottom: 30px; }
 section.for-you .container .for-you_body .item:nth-of-type(2) {
-  margin-bottom: 100px; }
+  margin-bottom: 30px; }
 
 .message {
   background-color: #fff; }
@@ -389,6 +466,10 @@ section.for-you .container .for-you_body .item:nth-of-type(2) {
     color: #E60012;
     text-align: center;
     margin-bottom: 80px; }
+    @media screen and (max-width: 767px) {
+      .message .sub-title {
+        font-size: 1.5rem;
+        margin-bottom: 40px; } }
   .message .message-wrapper {
     display: flex; }
     @media screen and (max-width: 767px) {
@@ -417,6 +498,9 @@ section.for-you .container .for-you_body .item:nth-of-type(2) {
       line-height: 1.5em; }
       .message .message-wrapper .body ul {
         color: #E60012; }
+      @media screen and (max-width: 767px) {
+        .message .message-wrapper .body .text br {
+          display: none; } }
   .message h3 {
     text-align: center;
     color: #E60012;
@@ -464,6 +548,9 @@ section.diary .container {
     top: 10px;
     left: 10px;
     width: 320px; }
+    @media screen and (max-width: 767px) {
+      section.diary .container .contents {
+        width: 190px; } }
     section.diary .container .contents .control {
       display: flex;
       align-items: center;
@@ -473,9 +560,12 @@ section.diary .container {
       display: block;
       font-size: 1.3rem;
       color: #E60012; }
+      @media screen and (max-width: 767px) {
+        section.diary .container .contents dl {
+          font-size: 1rem; } }
       section.diary .container .contents dl dd {
         display: block;
-        font-size: 1.9em;
+        font-size: 1.5em;
         text-align: right; }
 
 .supporters {
@@ -496,7 +586,7 @@ section.diary .container {
       @media screen and (max-width: 767px) {
         .supporters .list .item {
           margin-right: 0;
-          margin-bottom: 10px; } }
+          margin-bottom: 16px; } }
     .supporters .list .item:last-of-type {
       margin-right: 0; }
       @media screen and (max-width: 767px) {
@@ -525,8 +615,14 @@ footer.footer {
         margin-bottom: 0;
         font-size: .8235rem;
         color: #707070; }
+    @media screen and (max-width: 767px) {
+      footer.footer .header .right {
+        text-align: center; } }
     footer.footer .header .right ul {
       align-items: center; }
+      @media screen and (max-width: 767px) {
+        footer.footer .header .right ul {
+          justify-content: center; } }
     footer.footer .header .right button {
       font-size: 12px;
       color: #707070;
@@ -545,6 +641,9 @@ footer.footer {
 html {
   font-size: 17px;
   font-weight: 400; }
+  @media screen and (max-width: 767px) {
+    html {
+      font-size: 16px; } }
 
 body {
   background-color: #F2F2F2;
@@ -556,5 +655,8 @@ a {
 
 section, header, .supporters {
   margin-bottom: 50px; }
+  @media screen and (max-width: 767px) {
+    section, header, .supporters {
+      margin-bottom: 30px; } }
 
 /*# sourceMappingURL=index.css.map */

@@ -30,8 +30,15 @@ footer.footer {
 
         .right {
 
+            @include mq(sm) {
+                text-align: center;
+            }
+
             ul {
                 align-items: center;
+                @include mq(sm) {
+                    justify-content: center;
+                }
             }
     
             button {

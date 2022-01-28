@@ -2,6 +2,9 @@ section.for-you {
     .container {
         .for-you_header {
             margin-bottom: 70px;
+            @include mq(sm) {
+                margin-bottom: 50px;
+            }
             .list {
                 display: flex;
                 justify-content: space-around;
@@ -41,6 +44,7 @@ section.for-you {
 
                     @include mq(sm) {
                         width: 100%;
+                        margin-bottom: 10px;
                     }
 
                     .title img {
@@ -48,8 +52,12 @@ section.for-you {
                     }
 
                     .sub-title {
-                        font-size: 26px;
+                        font-size: 1.5294rem;
                         font-weight: $bold;
+
+                        @include mq(sm) {
+                            font-size: 1.3rem;
+                        }
                     }
 
                     .actions .btn {
@@ -77,6 +85,9 @@ section.for-you {
             }
 
             $margin-bottom: 100px;
+            @include mq(sm) {
+                $margin-bottom: 30px;
+            }
             .item:nth-of-type(1) {
                 margin-bottom: $margin-bottom;
             }

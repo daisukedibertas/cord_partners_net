@@ -9,15 +9,29 @@
     .title {
         font-size: 3.529rem;
         letter-spacing: 0.045em;
+
+        @include mq(sm) {
+            font-size: 3rem;
+            margin-bottom: 0;
+        }
     }
 
     .sub-title {
         font-size: 1.764rem;
+        @include mq(sm) {
+            font-size: 1.1rem;
+        }
     }
 
     .text {
         color: $light-color;
         margin-bottom: 40px;
+
+        br {
+            @include mq(sm) {
+                display: none;
+            }
+        }
     }
 
     .card-wrapper {

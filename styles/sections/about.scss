@@ -2,6 +2,11 @@
 
 .about {
     $margin-bottom: 35px;
+
+    @include mq(sm) {
+        $margin-bottom: 20px;
+    }
+
     .wrapper {
         text-align: center;
     }
@@ -11,12 +16,20 @@
         font-weight: $extra-bold;
         letter-spacing: 0.045em;
         margin-bottom: 0;
+
+        @include mq(sm) {
+            font-size: 3rem;
+        }
     }
     .sub-title {
         font-size: 1.117rem;
         color: $main-color;
         font-weight: $bold;
         margin-bottom: $margin-bottom;
+
+        @include mq(sm) {
+            font-size: 1.1rem;
+        }
     }
     img {
         max-width: 80%;
@@ -27,5 +40,23 @@
         font-weight: $bold;
         font-size: 2.058rem;
         margin-bottom: $margin-bottom;
+        @include mq(sm) {
+            font-size: 1.5rem;
+        }
+
+        br {
+            display: none;
+            @include mq(sm) {
+                display: block;
+            }
+        }
+    }
+
+    p {
+        br {
+            @include mq(sm) {
+                display: none;
+            }
+        }
     }
 }
