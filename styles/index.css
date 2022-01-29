@@ -138,8 +138,6 @@ header.navbar a.main-color {
       display: block;
       border: none;
       text-align: center; }
-      .vision .card-wrapper .card img {
-        max-width: 100%; }
     .vision .card-wrapper .card:nth-of-type(1) {
       padding: 38px;
       border-radius: 0;
