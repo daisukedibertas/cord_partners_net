@@ -1,0 +1,326 @@
+@import './utils/fonts.scss';
+@import './utils/colors.scss';
+@import './utils/media-query.scss';
+@import './sections/header.scss';
+@import './sections/footer.scss';
+@import './partials/logo.scss';
+
+.contact {
+
+  .logo-wrapper {
+    display: block;
+    height: auto;
+    width: fit-content;
+    position: absolute;
+    top: 0;
+    .logo {
+      @include logo();
+    }
+  }
+
+
+  .main-color {
+    color: #E60012;
+  }
+  
+  .main-title {
+    color: #E60012;
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  .text {
+    letter-spacing: 0.1em;
+  }
+  
+  .contact {
+    text-align: center;
+    margin-bottom: 74.5px;
+    @include mq(sm) {
+      margin-top: 56px;
+    }
+  }
+  
+  h2 {
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  h3 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  section {
+    margin-bottom: 55px;
+  }
+  
+  html {
+    font-size: 17px;
+  }
+  
+  body {
+    background-color: #F2F2F2;
+    font-family: 'Noto Sans JP', 'Open Sans', sans-serif;
+  }
+  
+  p {
+    font-size: 16px;
+    font-weight: 100;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /*デザインcss↓*/
+  .box_con02 {
+    max-width: 900px;
+    margin: 0  auto;
+  }
+  @media only screen and (max-width: 768px) {
+    .box_con02 {
+      width: 95%;
+    }
+  }
+  .box_con02 form {
+    width: 100%;
+  }
+  .box_con02 form table {
+    width: 100%;
+  }
+  .box_con02 form table tr {
+    position: relative;
+  }
+  .box_con02 form table tr:first-child td:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 1px;
+    border-bottom: solid 1px rgba(28, 46, 83, 0.5);
+  }
+  .box_con02 form table tr:first-child th:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 1px;
+    border-bottom: solid 1px rgba(28, 46, 83, 0.5);
+  }
+  @media only screen and (max-width: 768px) {
+    .box_con02 form table tr:first-child td:before {
+      display: none;
+    }
+  }
+  .box_con02 form table tr th {
+    width: 30%;
+    font-weight: normal;
+    padding: 1em .5em;
+    background-color: rgba(112,112,112,0.05);
+    color: #000;
+    position: relative;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  @media only screen and (max-width: 768px) {
+    .box_con02 form table tr th {
+      text-align: center;
+      width: 100%;
+      display: block;
+      padding: .8em .2em;
+    }
+  }
+  .box_con02 form table tr th span {
+    background: #E60012;
+    padding: 0 .3em;
+    color: #fff;
+    margin-left: .5em;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .box_con02 form table tr th:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+  border-bottom: dashed 1px rgba(28, 46, 83, 0.5);
+  }
+  .box_con02 form table tr td {
+    position: relative;
+    padding: 1em .5em;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  @media only screen and (max-width: 768px) {
+    .box_con02 form table tr td {
+      padding: 1.5em .5em;
+      display: block;
+      width: 100%;
+      margin-bottom: 50px
+    }
+  }
+  .box_con02 form table tr td:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    border-bottom: dashed 1px rgba(28, 46, 83, 0.5);
+  }
+  .box_con02 form table tr .box_br {
+    display: block;
+  }
+  .box_con02 form table tr select, .box_con02 form table tr textarea, .box_con02 form table tr .wide {
+    width: 100%;
+    height: 3em;
+    padding: .5em;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .box_con02 form table tr textarea {
+    height: 10em;
+  }
+  
+  /*プライバシーのデザインcss↓*/
+  .con_pri {
+    max-width: 700px;
+    margin: 0  auto;
+  }
+  @media only screen and (max-width: 768px) {
+    .con_pri {
+      width: 95%;
+    }
+  }
+  .con_pri .box_pri {
+    height: 120px;
+    overflow-y: scroll;
+    border: 1px solid #cdcdcd;
+    background: #f7f7f7;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 20px;
+  }
+  @media only screen and (max-width: 768px) {
+    .con_pri .box_pri {
+      margin-top: 4%;
+      padding: 3%;
+    }
+  }
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .con_pri .box_pri {
+      padding: 4%;
+    }
+  }
+  .con_pri .box_pri .box_tori {
+    text-align: left;
+    margin-top: 26px;
+  }
+  @media only screen and (max-width: 768px) {
+    .con_pri .box_pri .box_tori {
+      margin-top: 4%;
+    }
+  }
+  .con_pri .box_pri .box_tori h4 {
+    font-weight: normal;
+    margin-bottom: 30px;
+    font-size: 150%;
+  }
+  @media only screen and (max-width: 768px) {
+    .con_pri .box_pri .box_tori h4 {
+      margin-bottom: 4%;
+    }
+  }
+  .con_pri .box_pri .box_tori .txt {
+    padding: 0 20px;
+  }
+  @media only screen and (max-width: 768px) {
+    .con_pri .box_pri .box_tori .txt {
+      padding: 0;
+    }
+  }
+  .con_pri .box_pri .box_num {
+    margin-top: 30px;
+  }
+  @media only screen and (max-width: 768px) {
+    .con_pri .box_pri .box_num {
+      margin-top: 5%;
+    }
+  }
+  .con_pri .box_pri .box_num h4 {
+    font-weight: normal;
+    font-size: 113%;
+  }
+  .con_pri .box_pri .box_num .txt {
+    padding: 10px 0 0 20px;
+  }
+  @media only screen and (max-width: 768px) {
+    .con_pri .box_pri .box_num .txt {
+      padding: 3% 0 0 3%;
+    }
+  }
+  
+  .box_check {
+    text-align: center;
+    margin: 1em auto;
+  }
+  .box_check label {
+    display: inline-block;
+  }
+  .box_check label span {
+    margin-left: .3em;
+  }
+  
+  .btn {
+    text-align: center;
+  }
+  .btn input {
+    display: inline-block;
+    background: #eee;
+    padding: .5em 4em;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  .btn input:hover {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+    opacity: 0.7;
+  }
+  
+  label {
+    padding-bottom: 3px;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .main-title {
+      font-size: 32px;
+    }
+  
+    h2 {
+      font-size: 24px;
+    }
+    h3 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

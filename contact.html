@@ -1,15 +1,240 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Open+Sans:ital@1&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Original CSS - index.css -->
+    <link rel="stylesheet" href="styles/contact.css">
+
+    <title>Cord Project Association</title>
 </head>
 
-<body>
-    This is Contact Page.
+<body class="contact">
+
+    <a class="logo-wrapper d-none d-md-block" href="/"><img class="logo" src="image/logo@2x.png"
+            alt="CORD PROJECT ASSOCIATION"></a>
+
+    <!-- header start -->
+    <!-- header PC -->
+    <header class="header">
+        <div class="container">
+            <h2 class="title">Menu</h2>
+            <ul class="list list-unstyled">
+                <li class="item"><a href="/#about">私たちについて</a></li>
+                <li class="item"><a href="/#activity">活動内容</a></li>
+                <li class="item"><a href="/#for-you">あなたにできること</a></li>
+                <li class="item"><a href="/#message">代表メッセージ</a></li>
+                <li class="item"><a href="/#diary">活動報告</a></li>
+                <li class="item"><a href="/contact.html">問い合わせ</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- header SP -->
+    <header class="navbar navbar-expand-lg navbar-light bg-light d-md-none sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand main-color" href="/">Menu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link main-color" href="#about">私たちについて</a>
+                    <a class="nav-link" href="/#activity">活動内容</a>
+                    <a class="nav-link" href="/#for-you">あなたにできること</a>
+                    <a class="nav-link" href="/#message">代表メッセージ</a>
+                    <a class="nav-link" href="/#diary">活動報告</a>
+                    <a class="nav-link" href="/contact.html">問い合わせ</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- about section -->
+    <section class="contact">
+        <div class="container wrapper">
+            <h2 class="main-title">CONTACT</h2>
+            <p class="text">
+                一般社団法人CORD PROJECTへのお問い合わせはこちらからお願いいたします。
+            </p>
+        </div>
+    </section>
+
+    <!-- form section -->
+    <section class="privacypolicy">
+        <div class="container wrapper">
+            <div class="box_con02">
+                <form method="post" action="mail.php">
+                    <table class="formTable">
+                        <tr>
+                            <th>内容<span>必須</span></th>
+                            <td>
+                                <div class="box_br">
+                                    <label>
+                                        <input type="radio" name="gender" value="活動に参加したい（スポーツチームやアスリート）">
+                                        活動に参加したい（スポーツチームやアスリート）
+                                    </label>
+                                </div>
+                                <div class="box_br">
+                                    <label>
+                                        <input type="radio" name="gender" value="活動に参加したい（保護者の方）">
+                                        活動に参加したい（保護者の方）
+                                    </label>
+                                </div>
+                                <div class="box_br">
+                                    <label>
+                                        <input type="radio" name="gender" value="活動の導入希望・検討に関して（スポーツチーム、学校、団体・企業の方）">
+                                        活動の導入希望・検討に関して（スポーツチーム、学校、団体・企業の方）
+                                    </label>
+                                </div>
+                                <div class="box_br">
+                                    <label>
+                                        <input type="radio" name="gender" value="ボランティアに関して">
+                                        ボランティアに関して
+                                    </label>
+                                </div>
+                                <div class="box_br">
+                                    <label>
+                                        <input type="radio" name="gender" value="研修事業・後援依頼に関して">
+                                        研修事業・後援依頼に関して
+                                    </label>
+                                </div>
+                                <div class="box_br">
+                                    <label>
+                                        <input type="radio" name="gender" value="取材・撮影依頼">
+                                        取材・撮影依頼
+                                    </label>
+                                </div>
+                                <div class="box_br">
+                                    <label>
+                                        <input type="radio" name="gender" value="その他">
+                                        その他
+                                    </label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>お名前<span>必須</span></th>
+                            <td><input size="20" type="text" class="wide" name="お名前" placeholder="入力してください" /></td>
+                        </tr>
+                        <tr>
+                            <th>フリガナ</th>
+                            <td><input size="20" type="text" class="wide" name="フリガナ" placeholder="入力してください" /></td>
+                        </tr>
+                        <tr>
+                            <th>メールアドレス<span>必須</span></th>
+                            <td><input size="30" type="text" class="wide" name="Email" placeholder="入力してください" 　 /></td>
+                        </tr>
+                        <tr>
+                            <th>メールアドレス（確認用）<span>必須</span></th>
+                            <td><input size="30" type="text" class="wide" name="Email-2" placeholder="入力してください" 　 />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>所属<span>必須</span></th>
+                            <td><input size="30" type="text" class="wide" name="所属" placeholder="入力してください" 　 /></td>
+                        </tr>
+                        <tr>
+                            <th>電話番号<span>必須</span></th>
+                            <td><input size="30" type="text" class="wide" name="電話番号" placeholder="入力してください" 　 /></td>
+                        </tr>
+
+                        <tr>
+                            <th>お問合せ内容<span>必須</span></th>
+                            <td><textarea name="お問い合わせ内容" cols="50" rows="5" placeholder="入力してください"></textarea></td>
+                        </tr>
+                        <tr>
+                            <th>プライバシーポリシー</th>
+                            <td>
+                                <div class="con_pri">
+                                    <div class="box_pri">
+                                        <div class="box_tori">
+                                            <p class="txt">一般社団法人CORD
+                                                PROJECT（以下、「当団体」）は、以下のとおり個人情報保護方針を定め、個人情報（生存する個人に関する情報であって、当該情報に含まれる氏名、生年月日その他の記述等により特定の個人を識別することができるもの（他の情報と容易に照合することができ、それにより特定の個人を識別することができることとなるものを含む。）。以下同じ。）の適切な保護に努めます。以下のとおり個人情報保護方針を定め、個人情報（生存する個人に関する情報であって、
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box_check">
+                                    <label>
+                                        <input type="checkbox" name="acceptance-714" value="1" aria-invalid="false"
+                                            class="agree"><span class="check">当団体のプライバシーポリシーに同意します。</span>
+                                    </label>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <p class="btn">
+                        <span><input type="submit" value="確認" /></span>
+                    </p>
+                </form>
+            </div>
+        </div>
+
+
+    </section>
+    <footer class="footer">
+        <div class="header">
+            <!-- flex -->
+            <div class="left mb-3 mb-md-0">
+                <div class="d-flex mb-md-3">
+                    <div class="logo me-md-3 mb-3 mb-md-0">
+                        <a href="#">
+                            <img src="image/cord_project_logo.png" alt="一般社団法人 CORD PROJECT ASSOCIATION">
+                        </a>
+                    </div>
+                    <address>
+                        〒150-0032<br>
+                        東京都渋谷区鶯谷町2-3COMSビル 1F
+                    </address>
+                </div>
+            </div>
+            <div class="right">
+                <div class="right-header d-block d-md-flex">
+                    <ul class="list-unstyled d-flex me-md-3 mb-3">
+                        <li><a href="#"><img src="image/icons/facebook.png" alt="facebook"></a></li>
+                        <li class="ms-2 ms-md-1"><a href="#"><img src="image/icons/twitter.png" alt="twitter"></a></li>
+                        <li class="ms-2 ms-md-1"><a href="#"><img src="image/icons/instagram.png" alt="instagram"></a>
+                        </li>
+                        <li class="ms-2 ms-md-1"><a href="#"><img src="image/icons/youtube.png" alt="youtube"></a></li>
+                    </ul>
+                    <div class="actions">
+                        <button class="btn">その他のお問い合わせ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="left"><a class="text-mini" href="#">プライバシーポリシー</a></div>
+            <div class="right">
+                <span class="text-mini">Copyright (C) 2021 一般社団法人CORD PROJECT all rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

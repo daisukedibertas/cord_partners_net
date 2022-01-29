@@ -1,9 +1,13 @@
 // header PC
 header.header {
     margin-top: 40px;
+    margin-bottom: 50px;
+    @include mq(sm) {
+        margin-bottom: 30px;
+    }
     .container {
         max-width: 900px;
-        transform: rotate(-3deg);
+        transform: rotate(-3.5deg);
         margin-bottom: 30px;
         .title {
             color: $main-color;
@@ -27,7 +31,7 @@ header.header {
         height: 35px;
         background: $main-color;
         transform-origin: center;
-        transform: skewY(-3deg);
+        transform: skewY(-3.5deg);
     }
 
     @include mq(sm) {

@@ -30,7 +30,7 @@ a {
     text-decoration: none;
 }
 
-section, header, .supporters {
+section, .supporters {
     margin-bottom: 50px;
     @include mq(sm) {
         margin-bottom: 30px;

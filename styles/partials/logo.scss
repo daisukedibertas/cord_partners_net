@@ -1,0 +1,11 @@
+@mixin logo() {
+    display: inline-block;
+    $logo-width: 120px;
+    $logo-height: 172.5px;
+    width: $logo-width;
+    height: $logo-height;
+    @include mq(sm) {
+        width: $logo-width * 0.7;
+        height: $logo-height * 0.7;
+    }   
+}
