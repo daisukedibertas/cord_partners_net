@@ -284,9 +284,9 @@ footer.footer {
     display: inline-block; }
   .contact .box_check label span {
     margin-left: .3em; }
-  .contact .btn {
+  .contact .actions {
     text-align: center; }
-  .contact .btn input {
+  .contact .actions input {
     display: inline-block;
     background: #eee;
     padding: .5em 4em;
@@ -298,7 +298,7 @@ footer.footer {
     -o-transition: all 0.4s;
     -webkit-transition: all 0.4s;
     transition: all 0.4s; }
-  .contact .btn input:hover {
+  .contact .actions input:hover {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
     opacity: 0.7; }
   .contact label {
