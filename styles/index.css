@@ -121,9 +121,11 @@ header.navbar a.main-color {
       @media screen and (max-width: 767px) {
         .about h3 br {
           display: block; } }
-  @media screen and (max-width: 767px) {
-    .about p br {
-      display: none; } }
+  .about p {
+    font-family: 'Noto Sans JP', sans-serif; }
+    @media screen and (max-width: 767px) {
+      .about p br {
+        display: none; } }
 
 .vision {
   text-align: center; }
@@ -143,6 +145,7 @@ header.navbar a.main-color {
       .vision .sub-title {
         font-size: 1.1rem; } }
   .vision .text {
+    font-family: 'Noto Sans JP', sans-serif;
     color: #707070;
     margin-bottom: 40px; }
     @media screen and (max-width: 767px) {
@@ -445,6 +448,7 @@ section.for-you .container .for-you_header {
       width: 230px;
       height: 230px; }
   section.for-you .container .for-you_header .text {
+    font-family: 'Noto Sans JP', sans-serif;
     text-align: center;
     color: #707070; }
 section.for-you .container .for-you_body .item {
@@ -468,6 +472,8 @@ section.for-you .container .for-you_body .item {
       @media screen and (max-width: 767px) {
         section.for-you .container .for-you_body .item .info .sub-title {
           font-size: 1.3rem; } }
+    section.for-you .container .for-you_body .item .info .text {
+      font-family: 'Noto Sans JP', sans-serif; }
     section.for-you .container .for-you_body .item .info .actions .btn {
       font-size: 19px;
       color: #fff;
@@ -507,6 +513,7 @@ section.for-you .container .for-you_body .item {
       .message .message-wrapper {
         flex-direction: column; } }
     .message .message-wrapper .profile {
+      font-family: 'Noto Sans JP', sans-serif;
       font-size: 14px;
       flex-basis: 50%; }
       @media screen and (min-width: 768px) {
@@ -556,17 +563,20 @@ section.for-you .container .for-you_body .item {
           color: #E60012;
           font-size: 1.2941rem;
           font-weight: 700; }
-      .message .staff-wrapper .staff-list .staff-item .body .position {
-        color: #E60012;
-        line-height: 1;
-        font-size: 1.0588rem; }
-      .message .staff-wrapper .staff-list .staff-item .body .name {
-        font-size: 1.4706rem;
-        line-height: 1; }
-      .message .staff-wrapper .staff-list .staff-item .body .text {
-        font-size: 0.8235rem; }
+      .message .staff-wrapper .staff-list .staff-item .body {
+        font-family: 'Noto Sans JP', sans-serif; }
+        .message .staff-wrapper .staff-list .staff-item .body .position {
+          color: #E60012;
+          line-height: 1;
+          font-size: 1.0588rem; }
+        .message .staff-wrapper .staff-list .staff-item .body .name {
+          font-size: 1.4706rem;
+          line-height: 1; }
+        .message .staff-wrapper .staff-list .staff-item .body .text {
+          font-size: 0.8235rem; }
 
 section.diary .text {
+  font-family: 'Noto Sans JP', sans-serif;
   color: #707070;
   line-height: 1.5; }
 section.diary .container {
@@ -589,6 +599,7 @@ section.diary .container {
       margin-bottom: 12px; }
     section.diary .container .contents dl {
       display: block;
+      font-family: 'Noto Sans JP', sans-serif;
       font-size: 1.3rem;
       color: #E60012; }
       @media screen and (max-width: 767px) {
@@ -625,6 +636,7 @@ section.diary .container {
           margin-bottom: 0; } }
 
 footer.footer {
+  font-family: 'Noto Sans JP', sans-serif;
   padding: 30px 60px 20px;
   background: #E8E8E8; }
   @media screen and (max-width: 767px) {

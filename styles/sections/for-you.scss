@@ -25,6 +25,7 @@ section.for-you {
                 }
             }
             .text {
+                font-family: 'Noto Sans JP', sans-serif;
                 text-align: center;
                 color: $light-color;
             }
@@ -58,6 +59,10 @@ section.for-you {
                         @include mq(sm) {
                             font-size: 1.3rem;
                         }
+                    }
+
+                    .text {
+                        font-family: 'Noto Sans JP', sans-serif;
                     }
 
                     .actions .btn {

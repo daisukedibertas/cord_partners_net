@@ -52,6 +52,7 @@ header.navbar a.main-color {
   color: #E60012; }
 
 footer.footer {
+  font-family: 'Noto Sans JP', sans-serif;
   padding: 30px 60px 20px;
   background: #E8E8E8; }
   @media screen and (max-width: 767px) {

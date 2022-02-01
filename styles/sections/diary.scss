@@ -1,6 +1,7 @@
 section.diary {
 
     .text {
+        font-family: 'Noto Sans JP', sans-serif;
         color: $light-color;
         line-height: 1.5;
     }
@@ -33,6 +34,7 @@ section.diary {
 
             dl {
                 display: block;
+                font-family: 'Noto Sans JP', sans-serif;
 
                 font-size: 1.3rem;
                 color: $main-color;
