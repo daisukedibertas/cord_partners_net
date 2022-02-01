@@ -11,10 +11,8 @@
             margin-bottom: 40px;
         }
     }
-
     .message-wrapper {
         display: flex;
-
         @include mq(sm) {
             flex-direction: column;
         }

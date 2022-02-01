@@ -1,0 +1,19 @@
+.bottom-line {
+    position: relative;
+    margin-bottom: 160px;
+
+    @include mq(sm) {
+        margin-bottom: 120px;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: -60px;
+        width: 100%;
+        height: 12px;
+        background-color: $sub-color;
+        transform: skewY(-4deg);
+    }
+}

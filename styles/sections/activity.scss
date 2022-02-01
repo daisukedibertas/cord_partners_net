@@ -1,6 +1,7 @@
 @import '../partials/main-title.scss';
 
 .activity {
+    margin-top: 174px;
     .container {
 
         @mixin activity_item($image, $reverse) {
@@ -84,10 +85,7 @@
             }
         }
 
-        $activity-margin: 50px;
-        @include mq(sm) {
-            $activity-margin: 20px;
-        }
+        $activity-margin: 100px;
         .activity_item:nth-of-type(1) {
             @include activity_item($image-dir + "activity/activity01.png", false);
             margin-bottom: $activity-margin;

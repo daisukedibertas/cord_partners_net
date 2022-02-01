@@ -1,14 +1,15 @@
 @import '../utils/position-center.scss';
 
 .main-title {
-    $margin: 65px;
-    @include mq(sm) {
-        $margin: 40px;    
-    }
+    $margin: 103px;
 
-    margin: $margin 0 $margin 0;
+    margin: 103px 0 103px 0;
+
+    @include mq(sm) {
+        margin: 50px 0 50px 0;
+    }
     // main-title should nested in div
-    $height: 120px;
+    $height: 130px;
     width: 100%;
     height: $height;
     position: relative;
@@ -38,7 +39,7 @@
         position: absolute;
         height: $height;
         width: 100%;
-        transform: skewY(3deg);
+        transform: skewY(4deg);
         background-color: $main-color;
     }
     &::before {
@@ -49,7 +50,7 @@
         width: 100%;
         height: $height * 0.3;
         background-color: $sub-color;
-        transform: translateY(-50%);
-        transform: skewY(-5deg);
+        transform: translateY(-30%);
+        transform: skewY(-6.5deg);
     }
 }
