@@ -85,15 +85,18 @@ section.for-you {
             }
 
             $margin-bottom: 100px;
-            @include mq(sm) {
-                $margin-bottom: 30px;
+            .item {
+                padding-bottom: $margin-bottom;
+                @include mq(sm) {
+                    padding-bottom: $margin-bottom / 2;
+                }
             }
-            .item:nth-of-type(1) {
-                margin-bottom: $margin-bottom;
-            }
-            .item:nth-of-type(2) {
-                margin-bottom: $margin-bottom;
-            }
+            // .item:nth-of-type(1) {
+            //     margin-bottom: $margin-bottom;
+            // }
+            // .item:nth-of-type(2) {
+            //     margin-bottom: $margin-bottom;
+            // }
         }
     }
 }

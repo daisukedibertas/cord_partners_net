@@ -21,7 +21,6 @@ html {
 }
 
 body {
-    background-color: #F2F2F2;
     font-family: 'Noto Sans JP','Open Sans', sans-serif;
 }
 
@@ -35,4 +34,12 @@ section, .supporters {
     @include mq(sm) {
         margin-bottom: 30px;
     }
+}
+
+.white {
+    background-color: #fff;
+}
+
+.gray {
+    background-color: #F2F2F2;
 }
