@@ -3,8 +3,11 @@
   color: #E60012; }
 
 header.header {
-  margin-top: 40px;
-  margin-bottom: 50px; }
+  width: 100%;
+  position: relative;
+  margin-top: 85px;
+  margin-bottom: 60px;
+  z-index: 1; }
   @media screen and (max-width: 767px) {
     header.header {
       margin-bottom: 30px; } }
@@ -23,15 +26,27 @@ header.header {
       header.header .container .list .item:nth-of-type(1) a {
         color: #E60012; }
   header.header::after {
+    position: absolute;
     content: '';
     display: block;
+    width: 100%;
     height: 35px;
     background: #E60012;
     transform-origin: center;
-    transform: skewY(-3.5deg); }
+    transform: skewY(-4deg); }
   @media screen and (max-width: 767px) {
     header.header {
       display: none; } }
+  header.header a.donation {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    z-index: 2;
+    transform: translateX(40%); }
+    header.header a.donation img {
+      height: 140px;
+      width: 140px; }
 
 header.navbar a.main-color {
   color: #E60012; }
@@ -108,7 +123,8 @@ footer.footer {
     letter-spacing: 0.1em; }
   .contact .contact {
     text-align: center;
-    margin-bottom: 74.5px; }
+    margin-bottom: 74.5px;
+    margin-top: 100px; }
     @media screen and (max-width: 767px) {
       .contact .contact {
         margin-top: 56px; } }
@@ -124,7 +140,8 @@ footer.footer {
     font-size: 17px; }
   .contact body {
     background-color: #F2F2F2;
-    font-family: 'Noto Sans JP', 'Open Sans', sans-serif; }
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Open Sans', sans-serif; }
   .contact p {
     font-size: 16px;
     font-weight: 100; }

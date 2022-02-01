@@ -32,7 +32,8 @@ header.header {
   width: 100%;
   position: relative;
   margin-top: 85px;
-  margin-bottom: 60px; }
+  margin-bottom: 60px;
+  z-index: 1; }
   @media screen and (max-width: 767px) {
     header.header {
       margin-bottom: 30px; } }
@@ -62,6 +63,16 @@ header.header {
   @media screen and (max-width: 767px) {
     header.header {
       display: none; } }
+  header.header a.donation {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    z-index: 2;
+    transform: translateX(40%); }
+    header.header a.donation img {
+      height: 140px;
+      width: 140px; }
 
 header.navbar a.main-color {
   color: #E60012; }
@@ -675,14 +686,14 @@ footer.footer {
     transform: skewY(-4deg); }
 
 html {
-  font-size: 17px;
-  font-weight: 400; }
+  font-size: 17px; }
   @media screen and (max-width: 767px) {
     html {
       font-size: 16px; } }
 
 body {
-  font-family: 'Noto Sans JP','Open Sans', sans-serif; }
+  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Open Sans', sans-serif; }
 
 a {
   color: #000;
