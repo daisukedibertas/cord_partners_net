@@ -39,7 +39,7 @@ header.header {
       margin-bottom: 30px; } }
   header.header .container {
     max-width: 900px;
-    transform: rotate(-3.5deg);
+    transform: rotate(-7deg);
     margin-bottom: 30px; }
     header.header .container .title {
       color: #E60012;
@@ -59,21 +59,21 @@ header.header {
     height: 35px;
     background: #E60012;
     transform-origin: center;
-    transform: skewY(-4deg); }
+    transform: skewY(-7deg); }
   @media screen and (max-width: 767px) {
     header.header {
       display: none; } }
   header.header a.donation {
     display: block;
+    width: 140px;
+    height: 140px;
     position: absolute;
-    right: 0;
-    bottom: -50px;
+    right: -60px;
+    bottom: -30px;
     z-index: 2;
-    transform: translateX(40%); }
-    header.header a.donation img {
-      float: left;
-      height: 140px;
-      width: 140px; }
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../image/other/donation@2x.png"); }
 
 header.navbar a.main-color {
   color: #E60012; }
@@ -83,7 +83,7 @@ header.navbar a.main-color {
 
 .about {
   position: relative;
-  margin-top: 211px; }
+  margin-top: 221px; }
   @media screen and (max-width: 767px) {
     .about {
       margin-top: 40px; } }
@@ -696,6 +696,7 @@ footer.footer {
     width: 100%;
     height: 12px;
     background-color: #22B8D7;
+    transform: translateY(100%);
     transform: skewY(-4deg); }
 
 html {
@@ -716,12 +717,12 @@ a {
   content: '';
   display: block;
   position: absolute;
-  top: 140%;
+  top: 140px;
   width: 100%;
   height: 18px;
   background-color: #22B8D7;
   transform-origin: top left;
-  transform: skewY(6deg); }
+  transform: skewY(7deg); }
 
 section, .supporters {
   margin-bottom: 50px; }

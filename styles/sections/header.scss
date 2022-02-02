@@ -10,7 +10,7 @@ header.header {
     }
     .container {
         max-width: 900px;
-        transform: rotate(-3.5deg);
+        transform: rotate(-7deg);
         margin-bottom: 30px;
         .title {
             color: $main-color;
@@ -36,7 +36,7 @@ header.header {
         height: 35px;
         background: $main-color;
         transform-origin: center;
-        transform: skewY(-4deg);
+        transform: skewY(-7deg);
     }
 
     @include mq(sm) {
@@ -45,17 +45,15 @@ header.header {
 
     a.donation {
         display: block;
+        width: 140px;
+        height: 140px;
         position: absolute;
-        right: 0;
-        bottom: -50px;
+        right: -60px;
+        bottom: -30px;
         z-index: 2;
-
-        transform: translateX(40%);
-        img {
-            float: left;
-            height: 140px;
-            width: 140px;
-        }
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url($image-dir + 'other/donation@2x.png');
     }
 }
 // header SP
