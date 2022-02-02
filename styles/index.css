@@ -505,10 +505,11 @@ section.for-you .container .for-you_body .item {
       font-family: 'Noto Sans JP', sans-serif;
       line-height: 1.5; }
     section.for-you .container .for-you_body .item .info .actions .btn {
+      width: 290px;
       font-size: 19px;
       color: #fff;
       background-color: #22B8D7;
-      padding: 10px auto; }
+      padding: 12px auto; }
   section.for-you .container .for-you_body .item .thumbnail {
     flex-basis: 50%; }
     @media screen and (max-width: 767px) {
