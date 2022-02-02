@@ -10,11 +10,15 @@
         content: '';
         display: block;
         position: absolute;
-        bottom: -60px;
+        bottom: -80px;
         width: 100%;
         height: 12px;
         background-color: $sub-color;
+        transform-origin: center;
         transform: translateY(100%);
         transform: skewY(-4deg);
+        @include mq(sm) {
+            bottom: -60px;
+        }
     }
 }
