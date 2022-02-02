@@ -18,7 +18,11 @@ section.diary {
             position: absolute;
             top: 10px;
             left: 10px;
-            width: 320px;
+            width: 360px;
+
+            .text {
+                font-size: 14px;
+            }
 
             @include mq(sm) {
                 width: 190px;
