@@ -22,7 +22,6 @@ html {
 }
 
 body {
-    overflow-x: hidden;
     font-family: 'Noto Sans JP', sans-serif;
     font-family: 'Open Sans', sans-serif;
 }
@@ -64,3 +63,5 @@ section, .supporters {
 .gray {
     background-color: #F2F2F2;
 }
+
+body, html {overflow-x: hidden;}
