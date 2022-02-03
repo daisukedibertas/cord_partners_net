@@ -72,6 +72,9 @@ section.for-you {
                         color: #fff;
                         background-color: $sub-color;
                         padding: 12px auto;
+                        @include mq(sm) {
+                            width: 290px * 0.82;
+                        }
                     }
                 }
                 .thumbnail {

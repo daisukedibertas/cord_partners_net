@@ -63,5 +63,6 @@ section, .supporters {
 .gray {
     background-color: #F2F2F2;
 }
-
-body, html {overflow-x: hidden;}
+@include mq(md) {
+    body, html {overflow-x: hidden;}
+}

@@ -7,7 +7,7 @@
 
 この事が、CORD PROJECTの目的です。
 
-[CORD PROJECT ASSOCIATION]((http://cord-project.jp/))
+[CORD PROJECT ASSOCIATION](http://cord-project.jp/)
 
 # Note
 mainブランチへのpushで自動デプロイが走ります。
