@@ -43,7 +43,9 @@ header.header {
     margin-bottom: 30px; }
     header.header .container .title {
       color: #E60012;
-      font-weight: 700; }
+      font-weight: 800;
+      font-style: italic;
+    padding-bottom: 15px;}
     header.header .container .list {
       display: flex;
       justify-content: space-between; }
@@ -92,7 +94,8 @@ header.navbar a.main-color {
   .about h2 {
     font-size: 4.411rem;
     color: #E60012;
-    font-weight: 700;
+    font-weight: 800;
+    font-style: italic;
     letter-spacing: 0.045em;
     margin-bottom: 0; }
     @media screen and (max-width: 767px) {
@@ -102,18 +105,19 @@ header.navbar a.main-color {
     font-size: 1.117rem;
     color: #E60012;
     font-weight: 600;
-    margin-bottom: 20px; }
+    margin-bottom: 25px; }
     @media screen and (max-width: 767px) {
       .about .sub-title {
         font-size: 1.1rem; } }
   .about img {
     max-width: 80%;
-    margin-bottom: 20px; }
+    margin-bottom: 40px; }
   .about h3 {
     color: #E60012;
     font-weight: 600;
     font-size: 2.058rem;
-    margin-bottom: 20px; }
+    margin-bottom: 34px;
+    letter-spacing: 2px;}
     @media screen and (max-width: 767px) {
       .about h3 {
         font-size: 1.5rem; } }
@@ -123,7 +127,10 @@ header.navbar a.main-color {
         .about h3 br {
           display: block; } }
   .about p {
-    font-family: 'Noto Sans JP', sans-serif; }
+    font-family: 'Noto Sans JP', sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.9;
+    padding-bottom: 35px;}
     @media screen and (max-width: 767px) {
       .about p br {
         display: none; } }
@@ -135,7 +142,9 @@ header.navbar a.main-color {
     font-weight: 700; }
   .vision .title {
     font-size: 2.647rem;
-    letter-spacing: 0.045em; }
+    letter-spacing: 0.045em;
+    font-weight: 800;
+    font-style: italic;}
     @media screen and (max-width: 767px) {
       .vision .title {
         font-size: 3rem;
@@ -148,7 +157,9 @@ header.navbar a.main-color {
   .vision .text {
     font-family: 'Noto Sans JP', sans-serif;
     color: #707070;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    line-height: 1.9;
+    letter-spacing: 1.5px;}
     @media screen and (max-width: 767px) {
       .vision .text br {
         display: none; } }
@@ -164,7 +175,7 @@ header.navbar a.main-color {
       border: none;
       text-align: center; }
     .vision .card-wrapper .card:nth-of-type(1) {
-      padding: 38px;
+      padding: 40px 70px;
       border-radius: 0;
       box-shadow: 10px 10px #E60012;
       margin-right: 30px; }
@@ -173,13 +184,17 @@ header.navbar a.main-color {
           margin-right: 0;
           margin-bottom: 35px; } }
     .vision .card-wrapper .card:nth-of-type(2) {
-      padding: 38px;
+      padding: 40px 70px;
       border-radius: 0;
       box-shadow: 10px 10px #22B8D7; }
     .vision .card-wrapper .card_sub-title {
       font-size: 40px;
       font-weight: 600;
       color: #707070; }
+    .vision .card_text {
+      line-height: 1.9;
+      letter-spacing: 1.5px;
+    }
 
 .main-title {
   margin: 103px 0 103px 0;
@@ -197,7 +212,7 @@ header.navbar a.main-color {
     transform: translate(-50%, -50%);
     color: #fff;
     font-size: 2.647rem;
-    font-weight: 600;
+    font-weight: 800;
     letter-spacing: 0.045em;
     z-index: 2; }
     @media screen and (max-width: 767px) {
@@ -285,7 +300,9 @@ header.navbar a.main-color {
             color: #E60012;
             font-size: 1.470rem;
             font-weight: 700;
-            margin-bottom: 0; }
+            margin-bottom: 0;
+            font-style: italic;
+            font-weight: 800;}
             @media screen and (max-width: 767px) {
               .activity .container .activity_item:nth-of-type(1) .info .info_header .sub-title {
                 font-size: 1.1rem; } }
@@ -339,7 +356,9 @@ header.navbar a.main-color {
             color: #E60012;
             font-size: 1.470rem;
             font-weight: 700;
-            margin-bottom: 0; }
+            margin-bottom: 0;
+            font-style: italic;
+            font-weight: 800;}
             @media screen and (max-width: 767px) {
               .activity .container .activity_item:nth-of-type(2) .info .info_header .sub-title {
                 font-size: 1.1rem; } }
@@ -392,7 +411,9 @@ header.navbar a.main-color {
             color: #E60012;
             font-size: 1.470rem;
             font-weight: 700;
-            margin-bottom: 0; }
+            margin-bottom: 0;
+            font-style: italic;
+            font-weight: 800;}
             @media screen and (max-width: 767px) {
               .activity .container .activity_item:nth-of-type(3) .info .info_header .sub-title {
                 font-size: 1.1rem; } }
@@ -446,7 +467,9 @@ header.navbar a.main-color {
             color: #E60012;
             font-size: 1.470rem;
             font-weight: 700;
-            margin-bottom: 0; }
+            margin-bottom: 0;
+            font-style: italic;
+            font-weight: 800;}
             @media screen and (max-width: 767px) {
               .activity .container .activity_item:nth-of-type(4) .info .info_header .sub-title {
                 font-size: 1.1rem; } }
@@ -481,7 +504,9 @@ section.for-you .container .for-you_header {
   section.for-you .container .for-you_header .text {
     font-family: 'Noto Sans JP', sans-serif;
     text-align: center;
-    color: #707070; }
+    color: #707070;
+    line-height: 1.9;
+    letter-spacing: 1.5px;}
 section.for-you .container .for-you_body {
   margin-top: 110px; }
   section.for-you .container .for-you_body .item {
@@ -508,7 +533,11 @@ section.for-you .container .for-you_body {
             font-size: 1.3rem; } }
       section.for-you .container .for-you_body .item .info .text {
         font-family: 'Noto Sans JP', sans-serif;
-        line-height: 1.5; }
+        line-height: 1.6;
+            letter-spacing: 1.5px;}
+      .for-you .title {
+        padding-bottom: 15px;
+      }
       section.for-you .container .for-you_body .item .info .actions .btn {
         width: 290px;
         font-size: 19px;
@@ -629,7 +658,18 @@ section.for-you .container .for-you_body {
           color: #E60012;
           font-weight: 600; }
           .message .message-wrapper .profile .text-wrapper .career .title {
-            font-size: 1.1764rem; }
+            font-size: 1.1764rem;
+            font-style: italic;
+            font-weight: 800;
+            font-family: 'Open Sans', sans-serif; }
+          .message .message-wrapper .profile .text-wrapper .career .list-unstyled li {
+            font-weight: 800;
+            padding-bottom: 5px;
+          }
+            .message .message-wrapper .profile .text-wrapper .text {
+              line-height: 1.9;
+              letter-spacing: 1.0px;
+            }
     .message .message-wrapper .body {
       flex-basis: 50%;
       line-height: 1.5em; }
@@ -638,11 +678,18 @@ section.for-you .container .for-you_body {
       @media screen and (max-width: 767px) {
         .message .message-wrapper .body .text br {
           display: none; } }
+      .message .message-wrapper .body ul li {
+        font-weight: 800;
+      }
+      .message .message-wrapper .body .text {
+        line-height: 1.9;
+        letter-spacing: 1.2px;}
   .message h3 {
     text-align: center;
     color: #E60012;
     font-size: 50px;
-    font-weight: 700; }
+    font-weight: 800;
+    font-style: italic;}
   .message .staff-wrapper p {
     margin-bottom: 0; }
   .message .staff-wrapper .staff-list {
@@ -654,25 +701,33 @@ section.for-you .container .for-you_body {
       .message .staff-wrapper .staff-list .staff-item .header {
         position: relative; }
         .message .staff-wrapper .staff-list .staff-item .header img {
-          max-width: 100%; }
+          max-width: 100%;}
         .message .staff-wrapper .staff-list .staff-item .header .name {
           position: absolute;
           left: 10px;
           bottom: 10px;
           color: #E60012;
           font-size: 1.2941rem;
-          font-weight: 700; }
+          font-weight: 800;
+          font-style: italic;}
+          .namejp {
+            font-family: 'Noto Sans JP', sans-serif;
+          font-weight: 700;}
       .message .staff-wrapper .staff-list .staff-item .body {
         font-family: 'Noto Sans JP', sans-serif; }
         .message .staff-wrapper .staff-list .staff-item .body .position {
           color: #E60012;
           line-height: 1;
-          font-size: 1.0588rem; }
+          font-size: 1.0588rem;
+          padding-top: 20px;
+          padding-bottom: 3px;}
         .message .staff-wrapper .staff-list .staff-item .body .name {
           font-size: 1.4706rem;
           line-height: 1; }
         .message .staff-wrapper .staff-list .staff-item .body .text {
-          font-size: 0.8235rem; }
+          font-size: 0.8235rem;
+          line-height: 1.9;
+          letter-spacing: 1.5px;}
 
 section.diary .text {
   font-family: 'Noto Sans JP', sans-serif;
@@ -688,7 +743,9 @@ section.diary .container {
     top: 10px;
     left: 10px; }
     section.diary .container .contents .text {
-      font-size: 14px; }
+      font-size: 14px;
+      line-height: 1.9;
+      letter-spacing: 1.5px}
     section.diary .container .contents .control {
       display: flex;
       align-items: center;
@@ -713,7 +770,8 @@ section.diary .container {
   text-align: center; }
   .supporters .title {
     color: #E60012;
-    font-size: 1.4705rem; }
+    font-size: 1.4705rem;
+    font-weight: 800}
   .supporters .list {
     display: flex;
     width: fit-content;
@@ -838,7 +896,10 @@ section, .supporters {
 .gray {
   background-color: #F2F2F2; }
 
+.open-sans-italic {
+  font-style: italic;
+}
+
 body, html {
   overflow-x: hidden; }
-
 /*# sourceMappingURL=index.css.map */
